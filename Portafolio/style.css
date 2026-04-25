@@ -9,7 +9,12 @@ h1 {
   text-align: center;
   color: rgb(255, 255, 255);
 }
+.title  {
+  color: rgb(20, 24, 24);
+  display: flexbox;
+  justify-content: ;
 
+}
 p {
   font-family: verdana;
   font-size: 20px;
@@ -30,6 +35,7 @@ image {
     list-style: none;
     display: flex;
     gap: 80px; 
+    justify-content: center;
 
 }
 
@@ -39,6 +45,48 @@ image {
     background-color: snow;
     text-decoration: none;
     border-radius: 0.5rem;
+
 }
 
+.proyect  {
+  text-decoration: none;
+  grid-column: var(#080808);
+
+  
+}
+
+
+header {
+    flex-direction: column; 
+    gap: 15px;
+}
+
+.proyectos-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+
+@media (min-width: 600px) {
+    .proyect {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .galeria-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        flex-direction: row; /* Vuelve a fila */
+    }
+    .proyectos-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 o más */
+    }
+}
 

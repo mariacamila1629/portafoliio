@@ -1,4 +1,80 @@
-.target{
-    background-color: #f0f0f0;
-    border-radius: 20px;
+:root   {
+    color: #a86c9e;
+    color-scheme: var(#b67eaa);
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+}
+
+body{
+    height: 100vh;
+}
+
+.mascotas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.target{
+    text-align: center;
+    margin: 10px;
+    border: 1px solid;
+    gap: 50px;
+    color: #3131386e;
+
+}
+.nombre {
+    color: #d48fd6;
+    text-shadow: #3115a1;
+
+}
+
+ .title{
+    text-align: center;
+    background-color: #60bbc7b2;
+
+ }
+ .portafolio    {
+    text-decoration: none;
+    color: #080808;
+
+ }
+ eader {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 1rem 5%;
+    background-color: #2c3e50;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; 
+}
+display: grid;  {
+
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px; 
+    padding: 40px;
+}
+
+.galeria-flex {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes bajen a la siguiente línea */
+    justify-content: center;
+    gap: 15px;
+}
+
+.galeria-flex img {
+    flex: 1 1 250px; /* Crecen y se encogen, con un base de 250px */
+    object-fit: cover;
+    height: 200px;
+}
+
